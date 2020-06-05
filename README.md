@@ -8,4 +8,4 @@ En el evento dimos una breve intro a Python, pero todo el código presentado aqu
 Es el framework con el que hemos trabajado durante el evento. 
 
 ## Live Coding
-Pueden disfrutar del evento en el sitio de YouTube [aquí](https://www.youtube.com/watch?v=4FOl1QC4VXY 
+Pueden disfrutar del evento en el sitio de YouTube [aquí](https://www.youtube.com/watch?v=4FOl1QC4VXY)
