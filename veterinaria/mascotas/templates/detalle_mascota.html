@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    <h3>{{ mascota.nombre|capfirst }}</h3>
+    <p>{{ mascota.especies }}</p>
+    {% if mascota.raza %}
+        <p>Raza: {{ mascota.raza }}</p>
+    {% endif %}
+    {% if mascota.edad %}
+        <p>Age: {{ mascota.edad }}</p>
+    {% endif %}
+    {% if mascota.sexo %}
+        <p>Sex: {{ mascota.sexo }}</p>
+    {% endif %}
+    {% if mascota.vacunas.all %}
+        <p>Vacunas para:</p>
+        <ul>
+            {% for vacuna in mascota.vacunas.all %}
+                <li>{{ vacuna.nombre }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <p>Doctor: {{ mascota.doctor }}</p>
+    <p>fecha: {{ mascota.fecha|date:"M d Y" }}</p>
+    <p>{{ mascota.descripcion }}</p>
+</div>
+{% endblock %}

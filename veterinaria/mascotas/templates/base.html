@@ -1,0 +1,43 @@
+{% load static %}
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="stylesheet" id="ample-style-css" href="{% static 'style.css' %}" type="text/css" media="all">
+    </head>
+    <body class="wide">
+        <div id="page" class="hfeed site">
+            <header>
+                <div class="header">
+                    <div class="main-head-wrap inner-wrap clearfix">
+                        <div id="header-text" class="">
+                            <h1 id="site-title">
+                                <a href="/" title="Veterinaria Guau" rel="home">Veterinaria Guau</a>
+                            </h1>
+                            <p>Bañamos a los animales, pero los amamos.</p>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/header.jpg' %}" alt="Veterinaria">
+                </div>
+            </header>
+            <div class="main-wrapper">
+                <div class="single-page clearfix">
+                    <div class="inner-wrap">
+                        <p>.</p>
+                        <hr>
+                        <div>
+                        {% block content %}
+                        {% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="colophon">
+                <div class="inner-wrap">
+                    &copy; 2020. Ningún derecho reservado, todos son izquierdistas.
+                </div>
+            </footer>
+        </div>
+        <script src="{% static 'main.js' %}"></script>
+    </body>
+</html>
